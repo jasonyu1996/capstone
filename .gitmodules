@@ -1,0 +1,6 @@
+[submodule "emulator"]
+	path = emulator
+	url = https://github.com/jasonyu1996/capstone-model.git
+[submodule "compiler"]
+	path = compiler
+	url = https://github.com/jasonyu1996/capstone-c.git
