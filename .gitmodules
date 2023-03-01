@@ -4,3 +4,6 @@
 [submodule "compiler"]
 	path = compiler
 	url = https://github.com/jasonyu1996/capstone-c.git
+[submodule "gem5"]
+	path = gem5
+	url = https://github.com/jasonyu1996/capstone-gem5.git
