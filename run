@@ -1,0 +1,10 @@
+#!/bin/bash
+
+FILE_NAME="$1"
+
+if [ -z "$FILE_NAME" ]; then
+    echo "File name missing!"
+    exit 1
+fi
+
+docker run --rm -v "$(readlink -f "$FILE_NAME")":/source/source.c:ro capstone
