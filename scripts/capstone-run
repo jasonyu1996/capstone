@@ -7,6 +7,4 @@ if [ -z "$FILE_NAME" ]; then
     exit 1
 fi
 
-echo "Executing $FILE_NAME"
-
 capstone-c "$FILE_NAME" | capstone-emu
