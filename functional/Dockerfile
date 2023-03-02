@@ -25,4 +25,4 @@ COPY scripts/capstone-run /bin/
 
 RUN rm -rf /build
 
-ENTRYPOINT ["capstone-run", "/source/source.c"]
+ENTRYPOINT ["capstone-run"]
