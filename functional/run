@@ -7,4 +7,5 @@ if [ -z "$FILE_NAME" ]; then
     exit 1
 fi
 
-docker run --rm -v "$(dirname "$(readlink -f "$FILE_NAME")")":/source:ro capstone /source/"$(basename "$FILE_NAME")"
+docker run --rm -it -v "$(dirname "$(readlink -f "$FILE_NAME")")":/source:ro capstone \
+    /source/"$(basename "$FILE_NAME")"
